@@ -1,0 +1,333 @@
+.App {
+  
+  text-align: center;
+  
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+
+  /* background : url(../assets/fondo2.png), #2e2e2f no-repeat 100%; */
+  background: url(../src/assets/fondo.png), #2e2e2f no-repeat 100%; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:100vw 100vh;
+}
+
+
+
+/* esto es para que no me imprima la url ni la fecha ni nada de eso en la hoja del remito */
+@page { size: auto;  margin: 0mm; }
+
+tr {
+  line-height: 10px;
+  min-height: 10;
+  height: 10px;
+}
+
+option:disabled{
+  color: red;
+}
+
+
+.remito{
+  background: #ffffff no-repeat 100%; 
+  padding: 30px;
+  margin-top: 30px;
+  color: rgb(9, 8, 8);
+  display: grid;
+  grid-template-rows:auto auto auto ;
+  grid-template-columns: 1fr ;
+  width:60vw;
+}
+
+.remito > .header{
+  padding: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.remito > .body{
+  padding: 20px;
+  margin-top: 5px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.remito > .footer{
+  padding: 10px;
+  margin-top: 5px;
+  /* border: 1px solid black; */
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.remito > .horas{
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.inicioact{
+  font-size: 10px;
+  text-align: left;
+}
+.firmas{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 10px;
+  text-align: center;
+}
+.firmas>div{
+  padding: 20px;
+}
+.fondosombra{
+  background-color: rgb(245, 245, 245);
+}
+
+td, th, tr{
+  font-size: 10px;
+  text-align: center;
+}
+
+.centrame{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+.rightame{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+ }
+
+
+.centrame2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+.maspaddingtop{
+  padding-top: 30px;
+}
+.maspaddingright{
+  padding-right: 80px;
+}
+
+.maspaddingtop2{
+  padding-top: 10px;
+}
+.maspaddingbottom{
+  padding-bottom: 30px;
+}
+
+.flexRow{
+  margin: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flexCol{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.alignLeft{
+text-align: left;
+}
+
+.alignRight{
+  text-align: right;
+}
+
+.imprimir{
+  border-radius: 6px;
+  width: 300px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(0, 240, 160);
+  border: none;
+  outline: none;
+}
+.imprimir:hover{
+  background-color: rgb(244, 239, 0);
+  border: salmon 1pxrgb(255, 31, 87);
+  color: rgb(15, 15, 15);
+ 
+}
+
+
+.guardarobra{
+  display: flex;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgb(0, 84, 130);
+  padding: 5px;
+
+  color: wheat;
+}
+
+.guardarobra2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: rgb(211, 211, 211);
+  padding: 20px;
+}
+
+.rehacer{
+  border-radius: 6px;
+  width: 100px;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(240, 84, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+}
+
+
+
+.layout{
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: 1fr ;
+
+}
+
+.clientes{
+
+}
+
+.filaSuperior{
+  margin: auto;
+
+}
+
+.filaInferior{
+
+
+}
+
+
+.esconder{
+  visibility: hidden;
+}
+
+.boton{
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: 50px;
+  color: white;
+}
+
+.atras{
+  background-color: tomato;
+}
+.siguiente{
+  background-color: rgb(61, 181, 255);
+}
+.seleccionadores{
+  width: 300px;
+  height: 100px;
+  font-size: 20px;
+  padding: 15px;
+}
+
+.seleccionadores{
+  margin-top: 10px;
+}
+
+.unafiladoscolumnas{
+  display: flex;
+  flex-direction: row;
+
+}
+.unafiladoscolumnas > div{
+  margin: 35px;
+}
+
+
+
+.qr{
+ margin: 10px;
+}
+
+span{
+padding: 20px;
+color: rgb(202, 202, 202);
+}
+
+.m3{
+  margin: 15px;
+  padding: 10px;
+  width: auto;
+  height: auto;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  font-size: 22px;
+  color: rgb(192, 11, 11);
+}
+
+
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

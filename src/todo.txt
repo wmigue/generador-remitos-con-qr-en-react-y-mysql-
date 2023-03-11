@@ -1,0 +1,7 @@
+- en tabla remitos, en un campo guardar el json completo del remito generado. ✅
+- hacer seccion para revisar todos los remitos generados y setearlos como anulados / activos 
+- permitir re-imprimir un remito con el json guardado en base de datos.
+- no es necesario guardar todos los clientes en los registros de la tabla remitos.
+- controlar luego de click en imprimir si acepta luego de imprimir guardar en base.
+- minificar codigo.
+- agregar formik para validar datos ingresados por el usuario al agregar obra por ejemplo.
